@@ -62,7 +62,7 @@ var init = () => {
     // a6
     {
         let getDesc = (level) => " \\alpha_6=" + getA5(level).toString(0);
-        a6 = theory.createUpgrade(3, currency1, new ExponentialCost(BigNumber.from("ee36"), 1e21));
+        a6 = theory.createUpgrade(5, currency1, new ExponentialCost(BigNumber.from("ee36"), 1e21));
         a6.getDescription = (_) => Utils.getMath(getDesc(a6.level));
         a6.getInfo = (amount) => Utils.getMathTo(getDesc(a6.level), getDesc(a6.level + amount));
     }
